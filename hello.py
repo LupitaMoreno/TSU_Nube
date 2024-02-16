@@ -1,0 +1,12 @@
+variable = "Hello world!"
+print(variable)
+print('Longitud: ',len(variable))
+print("Ahora en mayusculas:")
+print(variable.upper())
+print('Numero de veces que se usa la letra "l"')
+print(variable.count('l'))
+print('En que posición se ecuentra un símbolo de admiración')
+admiracion = variable.find('!')
+print(admiracion)
+print('Cambiando ! por ?')
+print(variable.replace("!","?"))
