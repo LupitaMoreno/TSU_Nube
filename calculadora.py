@@ -30,18 +30,20 @@ while True:
     else :
         break
 
-
 op = '0'
 while op not in lista:
-    op = str(input('Ingresa el simbolo de la operacion, esta permitido +, -, *, /,^'))
+    op = str(input('Ingresa el simbolo de la operacion, esta permitido (+, -, *, /,^):'))
     if op not in lista :
-        input('Operacion no valida')
+        print('Operacion no valida\n')
 
 
 #Solicitando segunda cifra con control de errores
 while True:
     try:
         b = float(input('Ingresa la segunda cantidad:'))
+        if op == '/':
+            while b == 0:
+                 b = float(input('Ingresa una cantidad diferente de cero:'))
     except ValueError :
         print('No es un número válido')
     else :
