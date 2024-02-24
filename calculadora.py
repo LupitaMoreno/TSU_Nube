@@ -24,7 +24,7 @@ print('Calculadora ')
 # Solicitando primera cifra con control de errores
 while True:
     try:
-        a = float(input('Ingresa la primer cantidad:'))
+        a = float(input('Ingresa la primer cantidad: '))
     except ValueError :
         print('No es un número válido')
     else :
@@ -32,15 +32,15 @@ while True:
 
 op = '0'
 while op not in lista:
-    op = str(input('Ingresa el simbolo de la operacion, esta permitido (+, -, *, /,^):'))
+    op = str(input('Ingresa el símbolo de la operación, se pueden realizar las siguiente operaciones(+, -, *, /,^): '))
     if op not in lista :
-        print('Operacion no valida\n')
+        print('Operación no válida\n')
 
 
 #Solicitando segunda cifra con control de errores
 while True:
     try:
-        b = float(input('Ingresa la segunda cantidad:'))
+        b = float(input('Ingresa la segunda cantidad: '))
         if op == '/':
             while b == 0:
                  b = float(input('Ingresa una cantidad diferente de cero:'))
