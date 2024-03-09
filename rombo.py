@@ -1,4 +1,4 @@
-import math 
+#import math 
 #Solicitando al usuario el tamaño del rombo
 lineas = input('Ingresa el número de líneas del rombo, debe ser un número impar.\n')
 lineas = int(lineas)
